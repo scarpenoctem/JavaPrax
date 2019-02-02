@@ -28,6 +28,9 @@ public class StringUtil {
 		int y = str.length()-1;
 		for (int x = 0; x < str.length(); x++) {
 			if (str.charAt(x) == str.charAt(y)) {
+				if(x == y) { 
+					return true;
+				}
 				y--;
 			} else {
 				return false;
