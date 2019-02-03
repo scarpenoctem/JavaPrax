@@ -13,7 +13,7 @@ public class PracticeApp {
 	
 	public static void main(String args[]) {
 		
-		System.out.println("Connecting to Database...\n");		
+		System.out.println("Connecting to Database...");		
 		try {
 			Class.forName("org.h2.Driver").newInstance();
 			connection = DriverManager.getConnection("jdbc:h2:" + "./Database/pracAppDB", "username", "password");

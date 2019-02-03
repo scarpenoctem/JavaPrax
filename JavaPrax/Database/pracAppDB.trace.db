@@ -1,0 +1,55 @@
+2019-02-03 16:22:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS REGISTRATION(ID INTEGER AUTO[*] INCREMENT, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), AGE INTEGER(3), HEIGHT INTERGER(3), OCCUPATION VARCHAR(255), PRIMARY KEY(ID)) "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS REGISTRATION(id INTEGER auto increment, firstName VARCHAR(255), lastName VARCHAR(255), age INTEGER(3), height INTERGER(3), occupation VARCHAR(255), PRIMARY KEY(id)) [42001-197]
+2019-02-03 16:25:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS REGISTRATION(ID INTEGER AUTO[*] INCREMENT, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), AGE INTEGER(3), HEIGHT INTERGER(3), OCCUPATION VARCHAR(255), PRIMARY KEY(ID)) "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS REGISTRATION(id INTEGER auto increment, firstName VARCHAR(255), lastName VARCHAR(255), age INTEGER(3), height INTERGER(3), occupation VARCHAR(255), PRIMARY KEY(id)) [42001-197]
+2019-02-03 16:25:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS REGISTRATION(ID INTEGER AUTO[*] INCREMENT, FIRSTNAME VARCHAR(255), LASTNAME VARCHAR(255), AGE INTEGER(3), HEIGHT INTERGER(3), OCCUPATION VARCHAR(255), PRIMARY KEY(ID)) "; expected "(, FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS REGISTRATION(id INTEGER auto increment, firstName VARCHAR(255), lastName VARCHAR(255), age INTEGER(3), height INTERGER(3), occupation VARCHAR(255), PRIMARY KEY(id)) [42001-197]
+2019-02-03 16:28:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "INTERGER"; SQL statement:
+CREATE TABLE IF NOT EXISTS REGISTRATION(id INTEGER auto_increment, firstName VARCHAR(255), lastName VARCHAR(255), age INTEGER(3), height INTERGER(3), occupation VARCHAR(255), PRIMARY KEY(id)) [50004-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4400)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4215)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:6662)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6570)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at Utils.TableBuilderUtil.buildFriendInfoTable(TableBuilderUtil.java:26)
+	at Utils.TableBuilderUtil.buildAllTables(TableBuilderUtil.java:11)
+	at main.PracticeApp.main(PracticeApp.java:26)
+2019-02-03 16:29:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "INTERGER"; SQL statement:
+CREATE TABLE IF NOT EXISTS REGISTRATION(id INTEGER auto_increment,  firstName VARCHAR(255),  lastName VARCHAR(255),  age INTEGER(3),  height INTERGER(3),  occupation VARCHAR(255),  PRIMARY KEY(id)) [50004-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4400)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4215)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:6662)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6570)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at Utils.TableBuilderUtil.buildFriendInfoTable(TableBuilderUtil.java:26)
+	at Utils.TableBuilderUtil.buildAllTables(TableBuilderUtil.java:11)
+	at main.PracticeApp.main(PracticeApp.java:26)
