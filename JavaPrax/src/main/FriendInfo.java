@@ -10,7 +10,7 @@ public class FriendInfo implements PersonInfo {
 	//list that contains: age, height, occupation
 	private List<String> friendInfo = new ArrayList<>();
 
-	public void addFriend(List<String> friendInfo) {
+	public void addFriend() {
 		String tempStr = "";
 		int tempInt = 0;
 		// TODO Work in progress, was thinking that all friend data would come here and 
