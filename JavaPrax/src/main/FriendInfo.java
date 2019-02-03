@@ -3,7 +3,7 @@ package main;
 import Interfaces.PersonInfo;
 import java.util.ArrayList;
 import java.util.List;
-/* Class to store, retrieve, and manipulate Friends' data
+/* A custom table class to store, retrieve, and manipulate Friends' data
  * */
 public class FriendInfo implements PersonInfo {
 
@@ -11,7 +11,16 @@ public class FriendInfo implements PersonInfo {
 	private List<String> friendInfo = new ArrayList<>();
 
 	public void addFriend(List<String> friendInfo) {
-		
+		String tempStr = "";
+		int tempInt = 0;
+		// TODO Work in progress, was thinking that all friend data would come here and 
+		// be separated from whatever sub structure and then be passed to the implemented 
+		// methods to then be added to the table structure that will house all friend data...
+		// (could use a DB but thats no fun... was thinking do it the hard way)
+		addName(tempStr);
+		addAge(tempInt);
+		addHeight(tempInt);
+		addOccupation(tempStr);
 	}
 
 	@Override
