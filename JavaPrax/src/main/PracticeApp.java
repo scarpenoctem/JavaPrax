@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import Utils.StringUtil;
+import Utils.TableBuilderUtil;
 
 public class PracticeApp {
 	
@@ -21,5 +22,7 @@ public class PracticeApp {
 			System.out.println("*** CONNECTION FAILED! ***\n");
 			System.err.println(e.getMessage());
 		}
+		
+		TableBuilderUtil.buildAllTables();
 	}	
 }

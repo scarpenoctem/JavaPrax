@@ -1,7 +1,5 @@
 package Utils;
 
-
-import java.sql.ResultSet;
 import java.sql.Statement;
 import main.PracticeApp;
 
@@ -9,14 +7,8 @@ import main.PracticeApp;
 public class TableBuilderUtil {
 	
 	public static void buildAllTables() {
-		try {
 			System.out.println("Building All Tables...\n");
 			buildFriendInfoTable();
-			System.out.println("Building Tables was successful!\n");
-		} catch (Exception e) {
-			System.out.println("*** BUILDING ALL TABLES FAILED! ***\n");
-			System.err.println(e);
-		}
 	}
 	
 	public static void buildFriendInfoTable() {
@@ -24,7 +16,7 @@ public class TableBuilderUtil {
 			System.out.println("Building friendInfo Table...");			
 			Statement statement = PracticeApp.connection.createStatement();			
 			String friendInfo = "CREATE TABLE IF NOT EXISTS REGISTRATION"
-					+ "(id INTEGER auto increment, "
+					+ "(id INTEGER auto_increment, "
 					+ "firstName VARCHAR(255), "
 					+ "lastName VARCHAR(255), "
 					+ "age INTEGER(3), "
