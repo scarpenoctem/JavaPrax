@@ -15,7 +15,7 @@ public class TableBuilderUtil {
 		try {
 			System.out.println("Building friendInfo Table...");			
 			Statement statement = PracticeApp.connection.createStatement();			
-			String friendInfo = "CREATE TABLE IF NOT EXISTS FRIENDINFO"
+			String sqlQuery = "CREATE TABLE IF NOT EXISTS FRIENDINFO"
 					+ "(id INTEGER auto_increment, "
 					+ "firstName VARCHAR(255), "
 					+ "lastName VARCHAR(255), "
@@ -23,7 +23,7 @@ public class TableBuilderUtil {
 					+ "height INTEGER(3), "
 					+ "occupation VARCHAR(255), "
 					+ "PRIMARY KEY(id))";
-			statement.executeUpdate(friendInfo);
+			statement.executeUpdate(sqlQuery);
 			System.out.println("Building friendInfo Table was successful!\n");			
 		} catch (Exception e) {
 			System.out.println("*** BUILDING friendInfo TABLE FAILED! ***\n");

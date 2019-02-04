@@ -2,13 +2,11 @@ package Interfaces;
 
 public interface PersonInfo {
 	
-	public void addName(String name);
+	public void addFriend(String firstName, String lastName, int age, int height, String occupation);
+	public void removeFriend();
 	public String getName();
-	public void addAge(int age);
 	public int getAge();
-	public void addHeight(int height);
 	public int getHeight();
-	public void addOccupation(String occupation);
 	public String getOccupation();
 	
 	
