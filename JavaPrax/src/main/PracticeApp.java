@@ -24,5 +24,8 @@ public class PracticeApp {
 		}
 		
 		TableBuilderUtil.buildAllTables();
+		
+		FriendInfo friendInfo = new FriendInfo();
+		//friendInfo.addFriend();
 	}	
 }

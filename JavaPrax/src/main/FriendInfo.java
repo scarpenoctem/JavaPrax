@@ -11,6 +11,7 @@ public class FriendInfo implements PersonInfo {
 	public void addFriend(String firstName, String lastName, int age, int height, String occupation) {
 		try {
 			Statement statement = PracticeApp.connection.createStatement();
+			/*TODO needs an if not exists condition written into the query to avoid adding a duplicate name. same first name would be ok...*/
 			String sqlQuery = "insert into FRIENDINFO(firstName, lastName, age, height, occupation) values('"
 			+ firstName + "', '" + lastName + "', " + age + ", " + height + ", '" + occupation + "')";
 			int i = statement.executeUpdate(sqlQuery);
