@@ -2,9 +2,8 @@ package main;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import Utils.StringUtil;
+import Utils.IntUtil;
 import Utils.TableBuilderUtil;
 
 public class PracticeApp {
@@ -25,7 +24,11 @@ public class PracticeApp {
 		
 		TableBuilderUtil.buildAllTables();
 		
-		FriendInfo friendInfo = new FriendInfo();
+		//FriendInfo friendInfo = new FriendInfo();
 		//friendInfo.addFriend();
+		
+		int x = 5;
+		//IntUtil.isPrime(x);
+		IntUtil.printFirstXPrimeNumbers(x);
 	}	
 }
